@@ -20,13 +20,24 @@ def check():
       print("input incorrect try again")
       check()
 
+def run_away():
+   print("Well I guess you're now feeling a little better about your situation, maybe? no? oh well any way the strange scent of ash, flesh and the sweet sweet aroma of airplane peanuts fill the air")
+   choice2 = input("oh look more choices, choose 1 or 2\n 1.we all know wild animals love airplane peanuts its a fact or something you could run away\n 2.Hey there might be some useful stuff here and the other passangers don't need it anymore search the wreckage")
+   if choice2 == "1":
+      print("Yeah its probably for the best, the corpses where giving me the heebie jeebies")
+   elif choice2 == "2":
+      print("oh look at you! you sweet sweet loot goblin, I am pround of you, that right you take that stuff that the dead won't need anymore")
+   else:
+      print("input incorrect try again")
+      run_away()
+
 
 if __name__ == "__main__":
    check()
+   run_away()
+
 
 '''
-run away?
-search wreckage - finding items (inventory)
 
 survival programmes come back to you
 Food

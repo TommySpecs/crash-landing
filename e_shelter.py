@@ -1,4 +1,4 @@
-helter 
+shelter 
 you need to make a shelter 
 go to jungle to collect materials
 you find a collection of wood and large leaves
