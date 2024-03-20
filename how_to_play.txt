@@ -1,5 +1,5 @@
 Enjoy this terminal based adventure.
 playing is simple
 just read the lines of text in the terminal and when it asks you to make a decision 
-pick your decision by choosing its number and tying it into the termial and pressing the enter key
+pick your decision by choosing its number and tying it into the terminal and pressing the enter key
 to access this information just type help into the terminal and press the enter key
