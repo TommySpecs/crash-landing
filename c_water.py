@@ -11,5 +11,6 @@ def water ():
 
       '''
       Need to add movement to food or shelter
+      need to sort Game over
       '''
 

@@ -10,7 +10,7 @@ def game_intro ():
         print(file_content)
 
 def check():
-   print("You are overwhelmed by everything that has happened, where are you? are you okay? well I gues your better check")
+   print("You are overwhelmed by everything that has happened, where are you? are you okay? well I guess your better check")
    choice1 =  input ("Select 1 or 2\n 1.Check for injuries\n 2.Check bearings\n")
    if choice1 == "1":
     print("You check yourself for any injuries and by the grace of a great unknown force you are completley fine")
@@ -31,10 +31,6 @@ def run_away():
       print("input incorrect try again")
       run_away()
 
-
-if __name__ == "__main__":
-   check()
-   run_away()
 
 
 '''
