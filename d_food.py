@@ -73,39 +73,38 @@ def beach_food():
     add player options
     """
 
-    def coconut_tree():
+def coconut_tree():
+    
+    choices = ["1.Climb_Tree", "2.Throw_Rocks", "3.Shake_Tree"]
+ 
+    while True:
         chance = random.randint(1, 10)
-        choices = ["Climb_Tree", "Throw_Rocks", "Shake_Tree"]
+        if len(choices) == 1:
+            chance = 1
 
-        with True:
-            if choices == "Climb-Tree":
-                if chance > 5:
-                    print("Fail")
-                    choices.remove("Climb_Tree")
+        f = "xxx"
 
-            elif choices == "Throw_Rocks":
-                if chance > 2:
-                    print("Fail")
-                    choices.remove("Throw_Rocks")
+        for item in choices: 
+            f += item + "\n"
+            
+        playerchoice= input(f) 
 
-            elif choices == "Shake_Tree":
-                if chance > 6:
-                    print("Fail")
-                    choices.remove("Shake_Tree")
+        if playerchoice == "1":
+            if chance > 5:
+                print("Fail")
+                choices.remove("1.Climb_Tree")
 
+        elif playerchoice == "2":
+            if chance > 2:
+                print("Fail")
+                choices.remove("2.Throw_Rocks")
 
-"""
-Climb = 40% success 4 in 10
-Throw =  20% success 2 in 10
-Shake tree=  50% success 5 in 10
-         
-hide each choice once chosen
-auto success on last always
+        elif playerchoice == "3":
+            if chance > 6:
+                print("Fail")
+                choices.remove("3.Shake_Tree")
 
-Beach
-You see coconut trees
-climb tree
-throw rocks
-shake tree
-(each choice has a percentage of working after two fails tired must succeed)
-"""
+        
+            
+if __name__ == "__main__":
+   coconut_tree()

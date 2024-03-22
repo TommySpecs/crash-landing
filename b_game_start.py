@@ -1,3 +1,9 @@
+import c_water as Water
+import d_food as Food
+import e_shelter as Shelter
+
+
+
 def game_intro ():
     '''
    This function reads then prints the information from the .txt file in to the terminal
@@ -40,12 +46,7 @@ def run_away():
       print("input incorrect try again")
       run_away()
 
-
-
-'''
-
-survival programmes come back to you
-Food
-Water
-Shelter
-'''
+def next_steps():
+   print("All those years of watching survival programmes come back to you")
+   choice3 = input ("You remember you need to find 1. water\n" 
+                    " 2.food\n 3. shelter\n But where to start?")
