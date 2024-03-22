@@ -5,23 +5,82 @@ import d_food as food
 import e_shelter as shelter
 import f_final as final
 
-1.clothes
-Aeroplane food
-Cables (rope)
-sharp/ shiny metal
-Bottle of water
-Life vest
-Air mask and tubing
-Parachute
-Lighter
-Cooking utensils 
 
+class loot:
+    def __init__(self, number, name,  classification):
+        self.number = number
+        self.name = name
+        self.classification = classification
+
+    def get_number(self):
+        return self.number
+    
+    def get_name(self):
+        return self.name
+
+    def get_classification(self):
+        return self.classification
+
+
+#class player:
+    '''
+    Name
+    inventory
+    life t/f
+    '''
+
+
+    '''
+    check inventory 
+    set Name
+    change Name
+    get name
+    lose the life
+
+
+
+
+
+
+
+
+
+    clothes
+    aeroplane_food
+    Cables (rope)
+    sharp/ shiny metal
+    Bottle of water
+    Life vest
+    Air mask_tubing
+    Parachute
+    Lighter
+    Cooking_utensils 
+'''
 
 
 if __name__ == "__main__":
-    print ("CRASH Landing")
-    intro.start()
-    intro.how_to_play()
+   # print ("CRASH Landing")
+    #intro.start()
+    #intro.how_to_play()
+    '''
+    inventory code needs to go in player class
+    '''
+    inventory = []
+    '''
+    item - number, name, classification 
+    '''
+    banana = loot(1,"banana", "fruit")
+    apple = loot(2, "apple", "fruit")
+    '''
+    append to add to list
+    '''
+    inventory.append(banana)
+    inventory.append(apple)
+    print(inventory)
+
+    for item in inventory:
+        print(item.name)
+
 
 
 
