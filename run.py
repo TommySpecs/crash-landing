@@ -20,31 +20,7 @@ class loot:
 
     def get_classification(self):
         return self.classification
-
-
-#class player:
     '''
-    Name
-    inventory
-    life t/f
-    '''
-
-
-    '''
-    check inventory 
-    set Name
-    change Name
-    get name
-    lose the life
-
-
-
-
-
-
-
-
-
     clothes
     aeroplane_food
     Cables (rope)
@@ -57,6 +33,23 @@ class loot:
     Cooking_utensils 
 '''
 
+
+#class player:
+    '''
+    Name
+    inventory
+    life t/f
+    how to play
+    '''
+    '''
+    check inventory 
+    check how to play
+    set Name
+    change Name
+    get name
+    lose the life
+
+'''
 
 if __name__ == "__main__":
    # print ("CRASH Landing")

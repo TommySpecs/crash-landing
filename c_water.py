@@ -1,3 +1,7 @@
+import d_food as food
+import e_shelter as shelter
+
+
 def water():
     print(
         "Feeling thirsty? yay same all that screaming during the crash really dried out your throat"
@@ -15,13 +19,14 @@ def water():
     elif choice_water1 == "2":
         print(
             "Well done you you're able to focus on one task at a time as a reward the stream is just over here,"
-            " You find the stream and a valuable resource has been secured congratulations"
         )
+        end_water()
     else:
         print("input incorrect try again")
         water()
 
-        """
-      Need to add movement to food or shelter
-      need to sort Game over
-      """
+
+def end_water():
+    print(
+        "You find the stream and a valuable resource has been secured congratulations\n"
+    )
