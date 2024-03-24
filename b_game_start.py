@@ -5,15 +5,17 @@ import e_shelter as shelter
 
 
 def game_intro ():
-    '''
+   '''
    This function reads then prints the information from the .txt file in to the terminal
-    '''
-    with open('game_start_intro.txt', 'r') as file:
-     # Read the content of the file
-        file_content = file.read()
-            
-     # Print the content
-        print(file_content)
+   '''
+   intro="game_start_intro.txt"
+   with open(intro, "r") as file:
+    # Read the content of the file
+      file_content = file.read()
+         
+    # Print the content
+      print(file_content)
+      check()
 
 def check():
    print("You are overwhelmed by everything that has happened, where are you?"
@@ -24,8 +26,10 @@ def check():
                      )
    if choice1 == "1":
     print("You check yourself for any injuries and by the grace of a great unknown force you are completely fine\n")
+    run_away()
    elif choice1 == "2":
       print("eye spy with my little eye something beginning with ummmmmm.... a crashed plane, and a jungle.... nope you have no idea where you are\n")
+      run_away()
    else:
       print("input incorrect try again")
       check()
@@ -40,8 +44,10 @@ def run_away():
                    " 2.Hey there might be some useful stuff here and the other passengers don't need it anymore search the wreckage\n")
    if choice2 == "1":
       print("Yeah its probably for the best, the corpses where giving me the heebie jeebies\n")
+      next_steps()
    elif choice2 == "2":
       print("oh look at you! you sweet sweet loot goblin, I am proud of you, that right you take that stuff that the dead won't need anymore\n")
+      next_steps()
    else:
       print("input incorrect try again")
       run_away()
@@ -66,7 +72,7 @@ def next_steps():
       if playerchoice == "1" and "1.water" in choices:
          water.water()
          choices.remove("1.water")
-         
+
 
       elif playerchoice == "2" and "2.food" in choices:
          food.food_search_1()
@@ -78,9 +84,4 @@ def next_steps():
          choices.remove("3.shelter")
                   
       else:
-         print("Please pick a valid response")
-
-
-if __name__ == "__main__":
-   next_steps()
-   
+         print("Please pick a valid response")   
