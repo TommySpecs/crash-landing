@@ -1,12 +1,12 @@
 import a_intro as intro
 
 
-def finale():
+def game_over():
     """
     This function reads then prints the information from the .txt file in to the terminal
     """
-    final = "final.txt"
-    with open(final, "r") as file:
+    dead = "game_over.txt"
+    with open(dead, "r") as file:
         # Read the content of the file
         file_content = file.read()
 
@@ -17,7 +17,7 @@ def play_again():
         intro.start()
 
     elif play == "2":
-        print("Thank you for playing\n See you next Time!")
+        print("GAME OVER!\n See you next Time!")
 
     else:
         print("invalid entry")

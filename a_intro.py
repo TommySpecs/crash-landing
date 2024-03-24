@@ -24,6 +24,4 @@ def how_to_play():
 
         # Print the content
         print("how to play:\n", file_content)
-        game_start.game_intro ()
-
-
+        game_start.game_intro()

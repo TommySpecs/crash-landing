@@ -1,1 +1,0 @@
-if life = False
