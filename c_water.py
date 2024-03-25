@@ -1,5 +1,5 @@
 import game_over as GO
-
+import player
 
 def water():
     print(
@@ -31,3 +31,4 @@ def end_water():
     print(
         "You find the stream and a valuable resource has been secured congratulations\n"
     )
+    player.inventory.add(Water_source)

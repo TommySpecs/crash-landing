@@ -1,5 +1,6 @@
 import random
 import game_over as GO
+import player
 
 
 
@@ -63,7 +64,7 @@ def food_search_3():
             " shame you didn't have a holy hand grenade"
         )
         GO.game_over()
-        
+
     else:
         print("input incorrect try again")
         food_search_3()
@@ -121,4 +122,4 @@ def end_food():
     print(
         "You got a coconut! and a valuable resource has been secured congratulations\n"
     )
-    
+    player.inventory.add(Coconut)

@@ -1,4 +1,5 @@
 import game_over as GO
+import player
 
 def shelter():
     print(
@@ -16,7 +17,7 @@ def shelter():
             " ....there is a venomous snake in the bundle that bites you you die game over\n"
         )
         GO.game_over()
-        
+
     elif choice_shelter1 == "2":
         print(
             "using your keen senses and glorious eyesight the sticks you're going to add to your collection look sturdy and perfect for you need\n"
@@ -31,4 +32,4 @@ def end_shelter():
     print(
         "You made a shelter! and a valuable resource has been secured congratulations\n"
     )
-    
+    player.inventory.add(Shelter)

@@ -1,6 +1,7 @@
 import c_water as water
 import d_food as food
 import e_shelter as shelter
+import player
 
 
 def game_intro():
@@ -57,6 +58,7 @@ def run_away():
         print(
             "oh look at you! you sweet sweet loot goblin, I am proud of you, that right you take that stuff that the dead won't need anymore\n"
         )
+
         next_steps()
     else:
         print("input incorrect try again")
