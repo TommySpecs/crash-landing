@@ -1,5 +1,6 @@
 import game_over as GO
 import player
+#import task_loot
 
 def shelter():
     print(
@@ -17,6 +18,7 @@ def shelter():
             " ....there is a venomous snake in the bundle that bites you you die game over\n"
         )
         GO.game_over()
+        GO.play_again()
 
     elif choice_shelter1 == "2":
         print(
@@ -32,4 +34,4 @@ def end_shelter():
     print(
         "You made a shelter! and a valuable resource has been secured congratulations\n"
     )
-    player.inventory.add(Shelter)
+    #player.inventory.add(Shelter)

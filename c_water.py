@@ -1,5 +1,6 @@
 import game_over as GO
 import player
+#import task_loot
 
 def water():
     print(
@@ -16,6 +17,7 @@ def water():
             " The wild boar savagely attacks you killing you and bringing our game to an end"
         )
         GO.game_over()
+        GO.play_again()
 
     elif choice_water1 == "2":
         print(
@@ -31,4 +33,7 @@ def end_water():
     print(
         "You find the stream and a valuable resource has been secured congratulations\n"
     )
-    player.inventory.add(Water_source)
+    #player.add_task_item(Water_source)
+
+
+

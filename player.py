@@ -26,15 +26,6 @@ class task_loot:
     def get_classification(self):
         return self.classification
 
-'''
-    Name
-    inventory
-    how to play
-    '''
-    '''
-    check inventory 
-    check how to play
-  '''
 class player:
     def __init__(self, inventory, life,  how_to_play):
         self.inventory = inventory
@@ -71,3 +62,13 @@ class player:
 
        item_1 = random.randint(1, 10)
        player.inventory.add()
+
+'''
+    Name
+    inventory
+    how to play
+    '''
+'''
+    check inventory 
+    check how to play
+  '''

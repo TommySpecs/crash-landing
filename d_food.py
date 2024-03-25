@@ -1,6 +1,7 @@
 import random
 import game_over as GO
 import player
+#import task_loot
 
 
 
@@ -21,8 +22,7 @@ def food_search_1():
         food_search_2()
 
     elif food_choice == "2":
-        beach_food()
-
+        coconut_tree()
     else:
         print("input incorrect try again")
         food_search_1()
@@ -31,7 +31,7 @@ def food_search_2():
     found_cave = input(
         "AS you travel further you come across a small cave\n"
         " 1.Approach the cave\n"
-        " 2.Keep on the search for food, you don't want to get distracted"
+        " 2.Keep on the search for food, you don't want to get distracted\n"
     )
     if found_cave == "1":
         print(
@@ -41,7 +41,7 @@ def food_search_2():
 
     elif found_cave == "2":
         print("There is nothing here, well this sucks. Time to go to the Beach")
-        beach_food()
+        coconut_tree()
     else:
         print("input incorrect try again")
         food_search_2()
@@ -50,31 +50,28 @@ def food_search_3():
     Rabbit = input(
         "That rabbit is adorable you could give it a hug.... or catch it and eat it, it's your game.\n"
         " 1.It's adorable BUT its not food so off to look elsewhere\n"
-        " 2. It looks pretty tasty lets get closer"
+        " 2. It looks pretty tasty lets get closer\n"
     )
     if Rabbit == "1":
         print(
             "As you start heading away from the cave you notice a lot of bones surrounding the mouth of the cave,"
             " this rabbit was not normal, lets head to the beach and away from that thing"
         )
-        beach_food()
+        coconut_tree()
     elif Rabbit == "2":
         print(
             "You approach the rabbit and notice too late that its red beady eyes and terrifying teeth dripping in blood are coming right at you,"
             " shame you didn't have a holy hand grenade"
         )
         GO.game_over()
+        GO.play_again()
 
     else:
         print("input incorrect try again")
         food_search_3()
 
 
-def beach_food():
-    print(
-        "its a beautiful day the sun, the sea, shade from beautiful coconut trees.... wait coconuts? WE FOUND FOOD! but how to get it?\n"
-    )
-    coconut_tree()
+     
     
 def coconut_tree():
     
@@ -85,7 +82,7 @@ def coconut_tree():
         if len(choices) == 1:
             chance = 1
 
-        f = "xxx"
+        f = "its a beautiful day the sun, the sea, shade from beautiful coconut trees.... wait coconuts? WE FOUND FOOD! but how to get it?\n"
 
         for item in choices: 
             f += item + "\n"
@@ -122,4 +119,6 @@ def end_food():
     print(
         "You got a coconut! and a valuable resource has been secured congratulations\n"
     )
-    player.inventory.add(Coconut)
+    #player.inventory.add(Coconut)
+
+

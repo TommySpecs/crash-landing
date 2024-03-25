@@ -1,9 +1,5 @@
 import a_intro as intro
-import b_game_start as game_start
-import c_water as Water
-import d_food as food
-import e_shelter as shelter
-import f_final as final
+import b_game_start as game
 
 
 def title():
@@ -23,5 +19,6 @@ if __name__ == "__main__":
     title()
     intro.start()
     intro.how_to_play()
+    game.game_intro()
 
   

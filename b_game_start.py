@@ -2,6 +2,7 @@ import c_water as water
 import d_food as food
 import e_shelter as shelter
 import player
+#import loot
 
 
 def game_intro():
