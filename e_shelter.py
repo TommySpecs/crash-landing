@@ -1,5 +1,4 @@
-import c_water as water
-import d_food as food
+import game_over as GO
 
 def shelter():
     print(
@@ -16,6 +15,8 @@ def shelter():
             "well done champ your pile of sticks just grew but hey one of those sticks isn't a stick"
             " ....there is a venomous snake in the bundle that bites you you die game over\n"
         )
+        GO.game_over()
+        
     elif choice_shelter1 == "2":
         print(
             "using your keen senses and glorious eyesight the sticks you're going to add to your collection look sturdy and perfect for you need\n"

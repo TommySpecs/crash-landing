@@ -1,5 +1,4 @@
-import d_food as food
-import e_shelter as shelter
+import game_over as GO
 
 
 def water():
@@ -16,6 +15,8 @@ def water():
             "oh you curious little thing, what could possible go........ you have startled a wild boar and it's young."
             " The wild boar savagely attacks you killing you and bringing our game to an end"
         )
+        GO.game_over()
+
     elif choice_water1 == "2":
         print(
             "Well done you you're able to focus on one task at a time as a reward the stream is just over here,"

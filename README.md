@@ -1,32 +1,120 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# ***Crash Landing!***
 
-Welcome,
+## ***Introduction***
+Crash Landing is a text-based adventure game set on an uncharted island.
+It is filled with quirky easter eggs and fun lines but is aimed for those who enjoy a fun and silly text-based game. 
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
 
-## Reminders
+[Click here to view the deployed Page]()
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+## ***Project Goals***
 
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+This portfolio project is my third for [Code Institute](https://codeinstitute.net/) and my goals are to display newly developed Python skills in this project.
+I have built a text-based adventure game which is led by players choice, some of these choices will impact on the story progression.
 
 ---
 
-Happy coding!
+## ***Contents***
+
+  - [***Crash Landing!!***](#rochambeau)
+  - [***Introduction***](#introduction)
+  - [***Project Goals***](#project-goals)
+  - [***Contents***](#contents) 
+  - [***User Experience*** (UX)](#user-experience-ux)    
+    - [*User Stories*](#user-stories)
+    - [*How To Play*](#how-to-play)    
+  - [***User Experience Design (UXD)***](#user-experience-design-uxd)         
+    - [*Colour Scheme*](#colour-scheme)        
+    - [*Image Sourcing*](#image-sourcing)
+    - [*Game Flow*](#game-flow)
+  - [***Features***](#features)
+    - [*General Features*](#general-features)
+    - [*Future Enhancements*](#future-enhancements)
+  - [***Technologies Used***](#technologies-used)
+    - [*Languages Used*](#languages-used)
+    - [*Frameworks, Libraries & Programs Used*](#frameworks-libraries--programs-used)
+  - [***Testing***](#testing)
+  - [***Deployment***](#deployment)
+  - [***Credits***](#credits)
+    - [*Content*](#content)
+    - [*Media*](#media)
+
+---
+
+## ***User Experience*** (UX)
+ 
+### *User Stories*
+
+
+### *How to Play"
+
+---
+
+## ***User Experience Design (UXD)***
+
+### *Colour Scheme*
+
+
+### *Image Sourcing*
+Ascii text and Ascii Art has been added to the game. This is to help keep the player engaged and provide an aesthetically pleasing experience. The Ascii font was provided by [patorjk.com](https://patorjk.com/software/taag/#p=display&f=Big&t=) and the font used was called "Big". The Ascii Art was provided by https://ascii.co.uk/art.
+
+### *Game Flow*
+
+---
+
+## ***Features***
+
+### *General Features*
+
+
+### *Future Enhancements*
+
+
+---
+
+
+## ***Technologies Used***
+
+
+
+### *Languages Used*
+[Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+### *Frameworks, Libraries & Programs Used*
+
+- [Github](https://github.com/) 
+    - To save and store the files for the site.
+- [Lucidchart.com](https://www.lucidchart.com/pages/)
+    - The Lucidchart app was used to create the app's flowcharts.
+
+
+---
+
+## ***Testing***
+Please [click]() to visit the testing page.
+
+---
+
+## ***Deployment***
+Github Pages were used to deploy the live website. The instructions to achieve this are:
+
+- Log in (or sign up) to Github.
+- Find the repository for this project.
+- Click on the Settings link.
+- Click on the Pages link in the navigation bar on the left.
+- In the Source section, choose main from the drop down select branch menu.
+- Select Root from the drop down select folder menu.
+- Click Save.
+- Your live Github Pages site is now deployed at the URL shown.
+- With each new commit and git push the deployed site will update.
+
+The live link can be found [here]()
+
+---
+
+## ***Credits***
+
+### *Content*
+
+
+### *Media*

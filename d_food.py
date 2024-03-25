@@ -1,6 +1,5 @@
 import random
-import c_water as water
-import e_shelter as shelter
+import game_over as GO
 
 
 
@@ -63,6 +62,8 @@ def food_search_3():
             "You approach the rabbit and notice too late that its red beady eyes and terrifying teeth dripping in blood are coming right at you,"
             " shame you didn't have a holy hand grenade"
         )
+        GO.game_over()
+        
     else:
         print("input incorrect try again")
         food_search_3()
