@@ -168,7 +168,7 @@ To deploy onto Heroku
 - Go to Heroku and click "New" to create a new app.
 - After choosing the app name and setting the region, press "Create app".
 - If applicable to the project go to "Settings" and navigate to Config Vars. Add a Config Var with a keyword called PORT and a value of 8000.
-- In the "Settings", navigate to Buildpacks and add buildpacks for Python and NodeJS (in order).
+- In the "Settings", navigate to buildpacks section and add packs Python and NodeJS (in order).
 - Go to "Deploy". Scroll down and set Deployment Method to GitHub. Once GitHub is chosen, find your repository and connect it to Heroku.
 - Scroll down to Manual Deploy, make sure the "main" branch is selected and click "Deploy Branch".
 The deployed app can be found [here](https://crash-landing-ea802d1ccfaa.herokuapp.com/).
