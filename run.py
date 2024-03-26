@@ -12,9 +12,10 @@ def title():
     title = "title.txt"
     with open(title, "r") as startupFile:
         for line in startupFile:
-            print(Fore.CYAN +  line, end="")
-            wait(0.5)
+            print(Fore.CYAN + line, end="")
+        wait(0.5)
         print("\n")
+
 
 if __name__ == "__main__":
     title()

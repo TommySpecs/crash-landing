@@ -1,0 +1,4 @@
+black==24.3.0
+click==8.1.7
+colorama==0.4.6
+pathspec==0.12.1

@@ -5,7 +5,8 @@ def start():
     """
     This function takes the user input start to start the game
     """
-    user_input = input(Fore.CYAN + "Are you ready for your adventure?\n" "type 'yes' to continue\n")
+    user_input = input(Fore.CYAN + "Are you ready for your adventure?\n"
+                       "type 'yes' to continue\n")
     if user_input == "yes":
         pass
     else:
