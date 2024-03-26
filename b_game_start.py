@@ -50,15 +50,15 @@ def run_away():
     print(Fore.CYAN +
           "Well I guess you're now feeling \n"
           " a little better about your situation, maybe?\n"
-          " no? oh well\n any way the strange scent of ash,"
+          " no? oh well\n any way the strange scent of ash,\n"
           " flesh and\n the sweet sweet aroma of airplane peanuts"
           " fill the air\n")
     wait(0.5)
     choice2 = input(Fore.CYAN +
                     "oh look more choices, choose 1 or 2\n"
-                    " 1.we all know wild animals love airplane peanuts"
+                    " 1.we all know wild animals love airplane peanuts\n"
                     " its a fact or something you could run away\n"
-                    " 2.Hey there might be some useful stuff here and"
+                    " 2.Hey there might be some useful stuff here \n"
                     " the other passengers don't need it anymore"
                     " search the wreckage\n")
     if choice2 == "1":
