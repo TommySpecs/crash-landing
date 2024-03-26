@@ -1,8 +1,9 @@
 import c_water as water
 import d_food as food
 import e_shelter as shelter
-import player
-#import loot
+import f_final as final
+from time import sleep as wait
+from colorama import Fore, Back, Style
 
 
 def game_intro():
@@ -10,30 +11,33 @@ def game_intro():
     This function reads then prints the information from the .txt file in to the terminal
     """
     intro = "game_start_intro.txt"
-    with open(intro, "r") as file:
-        # Read the content of the file
-        file_content = file.read()
-
-        # Print the content
-        print(file_content)
+    with open(intro, 'r') as startupFile:
+        for line in startupFile:
+            print(Fore.CYAN + line, end="")
+            wait(0.5)
+        print("\n")
         check()
 
 
 def check():
-    print(
-        "You are overwhelmed by everything that has happened, where are you?"
+    print(Fore.CYAN +
+        "You are overwhelmed by everything that has happened, where are you?\n"
         " are you okay? well I guess your better check\n"
     )
-    choice1 = input("Select 1 or 2\n" " 1.Check for injuries\n" " 2.Check bearings\n")
+    wait(0.5)
+    choice1 = input(Fore.CYAN + "Select 1 or 2\n" " 1.Check for injuries\n" " 2.Check bearings\n")
     if choice1 == "1":
-        print(
+        print(Fore.CYAN +
             "You check yourself for any injuries and by the grace of a great unknown force you are completely fine\n"
         )
+        wait(0.5)
         run_away()
     elif choice1 == "2":
-        print(
-            "eye spy with my little eye something beginning with ummmmmm.... a crashed plane, and a jungle.... nope you have no idea where you are\n"
+        print(Fore.CYAN +
+            "eye spy with my little eye something beginning with ummmmmm....\n" 
+            "a crashed plane, and a jungle.... nope you have no idea where you are\n"
         )
+        wait(0.5)
         run_away()
     else:
         print("input incorrect try again")
@@ -41,25 +45,27 @@ def check():
 
 
 def run_away():
-    print(
-        "Well I guess you're now feeling a little better about your situation, maybe?"
+    print(Fore.CYAN +
+        "Well I guess you're now feeling a little better about your situation, maybe?\n"
         " no? oh well any way the strange scent of ash, flesh and the sweet sweet aroma of airplane peanuts fill the air\n"
     )
-    choice2 = input(
+    wait(0.5)
+    choice2 = input(Fore.CYAN +
         "oh look more choices, choose 1 or 2\n"
         " 1.we all know wild animals love airplane peanuts its a fact or something you could run away\n"
         " 2.Hey there might be some useful stuff here and the other passengers don't need it anymore search the wreckage\n"
     )
     if choice2 == "1":
-        print(
+        print(Fore.CYAN +
             "Yeah its probably for the best, the corpses where giving me the heebie jeebies\n"
         )
+        wait(0.5)
         next_steps()
     elif choice2 == "2":
-        print(
-            "oh look at you! you sweet sweet loot goblin, I am proud of you, that right you take that stuff that the dead won't need anymore\n"
+        print(Fore.CYAN +
+            "oh look at you! you sweet sweet loot goblin, I am proud of you. You didn't find anything useful, but you tried\n"
         )
-
+        wait(0.5)
         next_steps()
     else:
         print("input incorrect try again")
@@ -67,13 +73,12 @@ def run_away():
 
 
 def next_steps():
-    print("All those years of watching survival programmes come back to you\n")
+    print(Fore.CYAN + "All those years of watching survival programmes come back to you\n")
+    wait(0.5)
 
     choices = ["1.water", "2.food", "3.shelter"]
 
     while True:
-        if len(choices) == 0:
-            break
 
         f = "You remember you need to find:\n"
 
@@ -96,3 +101,7 @@ def next_steps():
 
         else:
             print("Please pick a valid response")
+
+        if len(choices) == 0:
+            break
+    final.finale()
