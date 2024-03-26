@@ -1,7 +1,8 @@
 Enjoy this terminal based adventure.
-Playing is simple
-Just read the lines of text in the terminal and when it asks you to make a decision.
-To pick your decision select its number and type it into the terminal and press the enter key.
+Playing is simple.
+Read the lines of text in the terminal and make a decision.
+To pick your decision select its number, type it into the terminal
+and press the enter key.
 
                                             |
                                       --====|====--

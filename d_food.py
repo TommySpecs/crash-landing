@@ -5,7 +5,7 @@ from time import sleep as wait
 
 def food_search_1():
     print(
-        "Sounds like you've got a rumbly in your tumbly"
+        "Sounds like you've got a rumbly in your tumbly\n"
         " and I don't think we have any honey to help you Pooh bear\n"
     )
     wait(0.5)
@@ -41,7 +41,7 @@ def food_search_2():
     wait(0.5)
     if found_cave == "1":
         print(
-            "As you approach the cave a cute, white rabbit hops out"
+            "As you approach the cave\n a cute, white rabbit hops out"
             " and begins to sniff around the entrance of the cave,"
             " Awww how cute!\n"
         )
@@ -59,7 +59,7 @@ def food_search_2():
 
 def food_search_3():
     Rabbit = input(
-        "That rabbit is adorable you could give it a hug.... or catch it"
+        "That rabbit is adorable you could give it a hug....\n or catch it"
         " and eat it, it's your game.\n"
         " 1.It's adorable BUT its not food so off to look elsewhere\n"
         " 2. It looks pretty tasty lets get closer\n"
@@ -67,17 +67,17 @@ def food_search_3():
     wait(0.5)
     if Rabbit == "1":
         print(
-            "As you start heading away from the cave you notice "
-            "a lot of bones surrounding the mouth of the cave,"
-            " this rabbit was not normal, "
+            "As you start heading away from the cave\n you notice "
+            "a lot of bones surrounding the mouth of the cave,\n"
+            " this rabbit was not normal, \n"
             "lets head to the beach and away from that thing"
         )
         coconut_tree()
     elif Rabbit == "2":
         print(
-            "You approach the rabbit and notice too late"
+            "You approach the rabbit and notice too late\n"
             " its red beady eyes and terrifying teeth dripping in blood"
-            " are coming right at you,"
+            " are coming right at you,\n"
             " shame you didn't have a holy hand grenade"
         )
         GO.game_over()
@@ -88,8 +88,8 @@ def food_search_3():
 
 
 def coconut_tree():
-    print("its a beautiful day the sun, the sea, "
-          "shade from beautiful coconut trees.... wait coconuts?"
+    print("its a beautiful day the sun,\n the sea,\n "
+          "shade from beautiful coconut trees\n.... wait coconuts?\n"
           " WE FOUND FOOD! but how to get it?\n")
     wait(0.5)
 
