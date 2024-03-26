@@ -25,7 +25,7 @@ def how_to_play():
 
         # Print the content
         print(
-            Fore.BLACK + Back.WHITE + "How To Play:",
+            Fore.YELLOW + "How To Play:",
             file_content,
             Style.RESET_ALL,
             sep="\n",
